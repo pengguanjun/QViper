@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GuiMotorConfig</class>
+ <widget class="QMainWindow" name="GuiMotorConfig">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>286</width>
+    <height>485</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="DescriptionLabel">
+      <property name="text">
+       <string>Axis Description:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="DescriptionEdit"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="DResLabel">
+      <property name="text">
+       <string>Drive Resolution:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="DResEdit"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="EResLabel">
+      <property name="text">
+       <string>Encoder Resolution:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="EResEdit"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="DeadbandLabel">
+      <property name="text">
+       <string>Deadband</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="DeadbandEdit"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="DscaleLabel">
+      <property name="text">
+       <string>DScale</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="DScaleEdit"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="AScaleLabel">
+      <property name="text">
+       <string>AScale:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="AScaleEdit"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="VScaleLabel">
+      <property name="text">
+       <string>VScale:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLineEdit" name="VScaleEdit"/>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="BScaleLabel">
+      <property name="text">
+       <string>BScale:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QLineEdit" name="BScaleEdit"/>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="EResLabel_2">
+      <property name="text">
+       <string>Axis:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QComboBox" name="AxisEnableComboBox">
+      <item>
+       <property name="text">
+        <string>Disabled</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Enabled</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="EResLabel_3">
+      <property name="text">
+       <string>Use Encoder:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QComboBox" name="UseEncoderComboBox">
+      <item>
+       <property name="text">
+        <string>Disabled</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Enabled</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="10" column="0">
+     <widget class="QLabel" name="EResLabel_4">
+      <property name="text">
+       <string>Limits:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="1">
+     <widget class="QComboBox" name="LimtsComboBox">
+      <item>
+       <property name="text">
+        <string>Disabled</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Enabled</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="11" column="0">
+     <widget class="QLabel" name="EResLabel_5">
+      <property name="text">
+       <string>Closed Loop:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="1">
+     <widget class="QComboBox" name="PosMaintenanceComboBox">
+      <item>
+       <property name="text">
+        <string>Disabled</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Enabled</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="12" column="0">
+     <widget class="QPushButton" name="ApplyButton">
+      <property name="text">
+       <string>Apply</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="1">
+     <widget class="QPushButton" name="SaveButton">
+      <property name="text">
+       <string>Save</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>286</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="action_Close"/>
+    <addaction name="action_close"/>
+    <addaction name="action_Close_2"/>
+   </widget>
+   <addaction name="menu_File"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Close">
+   <property name="text">
+    <string>&amp;Apply</string>
+   </property>
+  </action>
+  <action name="action_close">
+   <property name="text">
+    <string>&amp;Save</string>
+   </property>
+  </action>
+  <action name="action_Close_2">
+   <property name="text">
+    <string>&amp;Close</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
